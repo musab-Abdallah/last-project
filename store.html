@@ -1,0 +1,303 @@
+<html>
+<head>
+    <title>Giad</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet"href="bootstrap.min.css">
+    <style>
+    #cart1{
+        border-radius: 25px;
+        margin-right: 30px;
+        background-color: #fff;
+        color: #21BF73;
+    }
+		#nav1{
+		background-color:#21BF73;
+		color:#fff
+		}
+		#ah{
+            color: #fff;
+		}
+        #nli{
+            color: #fff;
+        }
+        #nli:hover{
+            background-color:#21BF73;
+            font-size: 16pt;
+            color: #fff;
+        }
+        /*tabs style*/
+        #tab1{
+          background-color:#21BF73;  
+        }
+		/*panel style*/
+		#x1{
+		background-color:#fff;
+        color:#21BF73;
+        padding: 10px;
+		}
+        #pt{
+           border-left: 10px solid #21BF73; 
+        }
+        img{
+            width: 300px;
+            height: 100px;
+            margin: auto;
+        }
+        .carousel{
+            width:80%;
+            margin: auto;
+        }
+        .carousel img{
+            width:100%;
+            height:400px !important;
+        }
+
+    </style>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+        })
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-devault navbar-fixed-top" id="nav1">
+    <div class="container-fluid">
+        <div class="navbar-header">
+             <button class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
+               <img src="image/men.png" class="media-object" style="width: 64px">
+            </button>
+            <div class="navbar-brand" style="display: inline-block">Giad</div>
+        </div>
+        <div id="navCollapse"  class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="home.html" id="nli" class="active">Home</a></li>
+            <li><a href="store.html" id="nli">Store</a></li>
+            <li><a href="Fourm.html" id="nli">Fourm</a></li>
+            <li><a href="Contact.html"  id="nli">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            
+        </ul>
+    </div>
+</div>
+</nav>
+<div class="container-fluid">
+    <div class="row" style="margin-top: 70px">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+            <div class="panel-group" id="y">
+                <div class="panel panel-success" id="panel1">
+                    <div class="panel-heading" id="pt">
+                        <h4 class="panel-title">
+                            <a href="#x1" data-parent="#y" data-toggle="collapse">Produt <span class="badge" style="margin-left:50px">350</span></a>
+                        </h4>
+                    </div>
+                    <div id="x1" class="collapse panel-collapse">
+                        <div class="list-group"  id="panel1"> 
+                            <a href="#" class="list-group-item">Cars:10000 - 20000</a>
+                            <a href="#" class="list-group-item">Truck:20000 - 30000</a>
+                            <a href="#" class="list-group-item">Motors:30000 - 40000</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading" id="pt">
+                        <h4 class="panel-title">
+                            <a href="#x2" data-parent="#y" data-toggle="collapse">Companies<span class="badge" style="margin-left:24px">350</span></a>
+                        </h4>
+                    </div>
+                    <div id="x2" class="collapse panel-collapse">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">BYD</a>
+                            <a href="#" class="list-group-item">HONDAI</a>
+                            <a href="#" class="list-group-item">KIA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading" id="pt">
+                        <h4 class="panel-title">
+                            <a href="#x3" data-parent="#y" data-toggle="collapse">Customer<span class="badge" style="margin-left:35px">350</span></a>
+                        </h4>
+                    </div>
+                    <div id="x3" class="collapse panel-collapse">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">Central Bank Of Suda CBS</a>
+                            <a href="#" class="list-group-item">Bank Of Khartoum BOK</a>
+                            <a href="#" class="list-group-item">Sudan University Of Sciences And Technology</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tabs tabs       tabs           tabs        tabs        tabs -->
+        <div class="col-lg-10 col-md-9 col-sm-6 col-xs-12">
+            <ul class="nav nav-tabs" id="tab1">
+                <li class="active">
+                    <a href="#car" data-toggle="tab" style="color:#fff; background-color:#21BF73 ;">Cars</a></li>
+                <li><a href="#truck" data-toggle="tab" style="color:#fff; background-color:#21BF73 ;">Trucks</a></li>
+                <li><a href="#motor" data-toggle="tab" style="color:#fff; background-color:#21BF73 ;">Motors</a></li>
+            </ul>
+            <div class="tab-content">
+                <!-- 1  -->
+                <div id="car" class="tab-pane fade active in">
+                   <div class="row">
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/1.jpg" class="img-responsive img-rounded" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                       </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/2.jpg" /><p class="caption text-success">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-chevron-right"></span></button>
+                      </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/5.jpg" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                       </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/4.jpg" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/5.jpg" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/2.jpg" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                       </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/1.jpg" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+                   </div>
+                </div>
+                <!-- 2 -->
+                <div id="truck" class="tab-pane fade">
+                    <div class="bg-success texr-center">Trucks</div>
+                    <div class="row">
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/23.jpg" class="img-responsive img-rounded"/><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                       </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/22.jpg" /><p class="caption text-success">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-chevron-right"></span></button>
+                      </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/23.jpg" /><p class="caption text-success">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-chevron-right"></span></button>
+                      </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/23.jpg" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/22.jpg" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/23.jpg" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                       </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/17.jpg" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+
+                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/12.jpg" /><p class="caption text-success">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-chevron-right"></span></button>
+                      </div>
+                   </div>
+                </div>
+                <!-- 2 -->
+                <div id="motor" class="tab-pane fade">
+                     <div class="bg-success texr-center">motors</div>
+                    <div class="row">
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/17.jpg" class="img-responsive img-rounded" /><p class="caption">car</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                       </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/18.jpg" /><p class="caption text-success">Motors</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-chevron-right"></span></button>
+                      </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/18.jpg" /><p class="caption">Motors</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                       </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/17.jpg" /><p class="caption">Motors</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/23.jpg" /><p class="caption">Motors</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/17.jpg" /><p class="caption">Motors</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                       </div>
+
+                       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/23.jpg" /><p class="caption">Motors</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                        <img src="image/23.jpg" /><p class="caption">Motors</p>
+                        <span>20.000.000SDG</span>
+                        <button class="btn btn-success btn-block">BUY NOW<span class="glyphicon glyphicon-"></span></button>
+                    </div>
+
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

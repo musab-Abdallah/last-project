@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contact form</title>
+     <link rel="stylesheet"href="bootstrap.min.css">
+    <link href="css/elements.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="js/my_js.js"></script>
+</head>
+
+<!-- Body Starts Here -->
+<body id="body" style="overflow:hidden;">
+    <nav class="navbar navbar-devault navbar-fixed-top" id="nav1">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
+                <img src="image/men.png" class="media-object" style="width: 64px">
+            </button>
+            <div class="navbar-brand" style="display: inline-block">giad</div>
+        </div>
+        <div id="navCollapse"  class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="home.html" id="nli" class="active">Home</a></li>
+            <li><a href="store.html" id="nli">Store</a></li>
+            <li><a href="Fourm.html" id="nli">Fourm</a></li>
+            <li><a href="Contact.html" id="nli" >Contact</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+    <p class="contactHeader">Contact Us</p>
+<div id="abc">
+    <!-- Popup Div Starts Here -->
+    <div id="popupContact">
+        <!-- Contact Us Form -->
+        <form action="#" id="form" method="post" name="form">
+            <!--img id="close" src="image/comp1.jpg" onclick ="div_hide()"-->
+            <hr>
+            <input id="name" name="name" placeholder="Name" type="text">
+            <input id="email" name="email" placeholder="Email" type="text">
+            <textarea id="msg" name="message" placeholder="Message"></textarea>
+            <a href="javascript:%20check_empty()" ><img src="image/telegram_app_64px.PNG"></a>
+        </form>
+    </div>
+    <!-- Popup Div Ends Here -->
+</div>
+<!-- Display Popup Button -->
+<!-- <h1>Contact Us</h1> -->
+<button id="popup" onclick="div_show()"><img src="image/telegram_app_64px.PNG"></button>
+</body>
+<!-- Body Ends Here -->
+</html>
